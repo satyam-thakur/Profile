@@ -3,6 +3,7 @@
   --bg:#0b0f17;
   --text:#e5e7eb;
 }
+html[data-theme='light'], html[data-theme='auto']{--accent:#111827;--bg:#0b0f17;--text:#e5e7eb}
 body{
   background-color:var(--bg);
   color:var(--text);
