@@ -1,0 +1,48 @@
+:root{
+  --accent:#111827;
+  --bg:#0b0f17;
+  --text:#e5e7eb;
+}
+body{
+  background-color:var(--bg);
+  color:var(--text);
+}
+a{color:#60a5fa}
+.navbar, .page-header{background:transparent !important}
+.btn-primary{background:#111827;border-color:#111827}
+
+/* Header (navbar) */
+#navbar-main.navbar{
+  background:rgba(11,15,23,.6) !important;
+  backdrop-filter:saturate(150%) blur(8px);
+}
+#navbar-main .navbar-brand,
+#navbar-main .nav-link{color:var(--text) !important}
+#navbar-main .nav-link:hover{color:#93c5fd !important}
+#navbar-main .fas.fa-moon{color:#cbd5e1}
+
+/* Hero/About section */
+section#about .home-section-bg{background:linear-gradient(180deg, rgba(17,24,39,.6) 0%, rgba(11,15,23,0) 60%)}
+#profile .avatar{box-shadow:0 10px 30px rgba(0,0,0,.35)}
+#profile .portrait-title h2{color:#f3f4f6;font-weight:800}
+#profile .portrait-title h3{color:#cbd5e1;font-weight:500}
+.network-icon .big-icon{color:#94a3b8}
+.network-icon a:hover .big-icon{color:#93c5fd}
+
+/* Headings */
+.home-section h1{color:#f3f4f6;font-weight:800;letter-spacing:.2px}
+.section-subheading{color:#e5e7eb;font-weight:700}
+
+/* Buttons */
+.btn{border-radius:10px}
+.btn.btn-outline-primary{color:#93c5fd;border-color:#1f2937}
+.btn.btn-outline-primary:hover{background:#1f2937;color:#e5e7eb}
+
+/* Skill bars */
+.skills-wrapper{background:transparent;border:1px solid #1f2937}
+.skills-percent{background:#111827}
+
+/* Cards */
+.card{background:#0e131c;border:1px solid #17202e}
+.card .text-muted{color:#a5b4fc !important}
+
