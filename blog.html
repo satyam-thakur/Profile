@@ -14,10 +14,10 @@
   <link rel="stylesheet" href="css/custom.css">
 </head>
 
-<body>
+<body class="dark">
   <div class="wrapper">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: rgba(11, 15, 23, 0.95); backdrop-filter: blur(10px);">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-main">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <strong>Satyam Thakur</strong>
@@ -59,8 +59,8 @@
         <div class="row">
           <div class="col-12">
             <div class="py-4">
-              <h1 class="mb-2" style="font-size: 2rem;">Blog</h1>
-              <p class="mb-4" style="font-size: 1rem; color: #94a3b8;">Technical articles, research papers, and insights on network engineering, cloud infrastructure, and blockchain technology.</p>
+              <h1 class="mb-2">Blog</h1>
+              <p class="mb-4">Technical articles, research papers, and insights on network engineering, cloud infrastructure, and blockchain technology.</p>
             </div>
           </div>
         </div>
@@ -70,31 +70,30 @@
           <div class="col-12">
             
             <!-- AWS Article -->
-            <div class="blog-card" style="border: 1px solid rgba(30, 41, 59, 0.5); border-radius: 6px; background: rgba(15, 23, 42, 0.3); margin-bottom: 1rem; transition: all 0.3s ease; overflow: hidden;">
-              <div style="display: flex; flex-wrap: wrap;">
-                <div class="blog-image" style="flex: 0 0 160px; max-width: 160px;">
-                  <div style="width: 100%; height: 120px; background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+            <div class="blog-card">
+              <div>
+                <div class="blog-image">
+                  <div>
                     <img src="authors/thumbnails/aws-vpc-peering.png" 
-                         alt="AWS Article Thumbnail" 
-                         style="width: 100%; height: 100%; object-fit: cover;"
-                         onerror="this.src='https://api.microlink.io/?url=https://medium.com/@satyam.th3/aws-multi-az-multi-region-network-using-vpc-peering-a-3-region-9-node-ec2-deployment-guide-86dc4b801572&screenshot=true&meta=false&embed=screenshot.url&waitFor=2000'; this.onerror=function(){this.parentElement.innerHTML='<i class=\'fab fa-medium\' style=\'font-size: 2.5rem; color: rgba(147, 197, 253, 0.5);\'></i>'}">
+                         alt="AWS Article Thumbnail"
+                         onerror="this.src='https://api.microlink.io/?url=https://medium.com/@satyam.th3/aws-multi-az-multi-region-network-using-vpc-peering-a-3-region-9-node-ec2-deployment-guide-86dc4b801572&screenshot=true&meta=false&embed=screenshot.url&waitFor=2000'; this.onerror=function(){this.parentElement.innerHTML='<i class=\'fab fa-medium\' style=\'font-size: 2.5rem;\'></i>'}">
                   </div>
                 </div>
-                <div class="blog-content" style="flex: 1; padding: 1rem;">
-                  <div style="display: flex; align-items: center; gap: 0.4rem; color: #94a3b8; margin-bottom: 0.4rem; font-size: 0.75rem;">
-                    <i class="far fa-calendar" style="font-size: 0.7rem;"></i>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <i class="far fa-calendar"></i>
                     <span>Apr 2025</span>
-                    <span style="margin: 0 0.2rem;">•</span>
-                    <i class="fab fa-medium" style="font-size: 0.7rem;"></i>
+                    <span class="separator">•</span>
+                    <i class="fab fa-medium"></i>
                     <span>Article</span>
                   </div>
-                  <h3 style="font-size: 1rem; font-weight: 600; color: #f3f4f6; margin-bottom: 0.4rem; line-height: 1.3;">
-                    <a href="https://medium.com/@satyam.th3/aws-multi-az-multi-region-network-using-vpc-peering-a-3-region-9-node-ec2-deployment-guide-86dc4b801572" target="_blank" style="color: #f3f4f6; text-decoration: none;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='#f3f4f6'">AWS Multi-AZ Multi-Region Network Using VPC Peering</a>
+                  <h3>
+                    <a href="https://medium.com/@satyam.th3/aws-multi-az-multi-region-network-using-vpc-peering-a-3-region-9-node-ec2-deployment-guide-86dc4b801572" target="_blank">AWS Multi-AZ Multi-Region Network Using VPC Peering</a>
                   </h3>
-                  <p style="color: #cbd5e1; font-size: 0.8rem; line-height: 1.4; margin-bottom: 0.6rem;">
+                  <p>
                     A comprehensive guide to deploying a 3-region, 9-node EC2 infrastructure with VPC peering for high availability.
                   </p>
-                  <a href="https://medium.com/@satyam.th3/aws-multi-az-multi-region-network-using-vpc-peering-a-3-region-9-node-ec2-deployment-guide-86dc4b801572" target="_blank" style="color: #60a5fa; text-decoration: none; font-weight: 500; font-size: 0.8rem;" onmouseover="this.style.color='#93c5fd'" onmouseout="this.style.color='#60a5fa'">
+                  <a href="https://medium.com/@satyam.th3/aws-multi-az-multi-region-network-using-vpc-peering-a-3-region-9-node-ec2-deployment-guide-86dc4b801572" target="_blank" class="read-more">
                     Read more →
                   </a>
                 </div>
@@ -102,31 +101,30 @@
             </div>
 
             <!-- Research Day Poster -->
-            <div class="blog-card" style="border: 1px solid rgba(30, 41, 59, 0.5); border-radius: 6px; background: rgba(15, 23, 42, 0.3); margin-bottom: 1rem; transition: all 0.3s ease; overflow: hidden;">
-              <div style="display: flex; flex-wrap: wrap;">
-                <div class="blog-image" style="flex: 0 0 160px; max-width: 160px;">
-                  <div style="width: 100%; height: 120px; background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+            <div class="blog-card">
+              <div>
+                <div class="blog-image">
+                  <div>
                     <img src="authors/thumbnails/research-poster.png" 
-                         alt="Research Poster Thumbnail" 
-                         style="width: 100%; height: 100%; object-fit: cover;"
-                         onerror="this.src='https://api.microlink.io/?url=https://drive.google.com/file/d/1SWbr2t_4H0YWwt5DklRSQ6I1bYv0O7H1/view&screenshot=true&meta=false&embed=screenshot.url&waitFor=2000'; this.onerror=function(){this.parentElement.innerHTML='<i class=\'fas fa-graduation-cap\' style=\'font-size: 2.5rem; color: rgba(40, 167, 69, 0.7);\'></i>'}">
+                         alt="Research Poster Thumbnail"
+                         onerror="this.src='https://api.microlink.io/?url=https://drive.google.com/file/d/1SWbr2t_4H0YWwt5DklRSQ6I1bYv0O7H1/view&screenshot=true&meta=false&embed=screenshot.url&waitFor=2000'; this.onerror=function(){this.parentElement.innerHTML='<i class=\'fas fa-graduation-cap\' style=\'font-size: 2.5rem;\'></i>'}">
                   </div>
                 </div>
-                <div class="blog-content" style="flex: 1; padding: 1rem;">
-                  <div style="display: flex; align-items: center; gap: 0.4rem; color: #94a3b8; margin-bottom: 0.4rem; font-size: 0.75rem;">
-                    <i class="far fa-calendar" style="font-size: 0.7rem;"></i>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <i class="far fa-calendar"></i>
                     <span>Apr 2025</span>
-                    <span style="margin: 0 0.2rem;">•</span>
-                    <i class="fas fa-file-alt" style="font-size: 0.7rem;"></i>
+                    <span class="separator">•</span>
+                    <i class="fas fa-file-alt"></i>
                     <span>Research Poster</span>
                   </div>
-                  <h3 style="font-size: 1rem; font-weight: 600; color: #f3f4f6; margin-bottom: 0.4rem; line-height: 1.3;">
-                    <a href="https://drive.google.com/file/d/1SWbr2t_4H0YWwt5DklRSQ6I1bYv0O7H1/view" target="_blank" style="color: #f3f4f6; text-decoration: none;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='#f3f4f6'">Securing the Future of E-Voting: Blockchain-based System</a>
+                  <h3>
+                    <a href="https://drive.google.com/file/d/1SWbr2t_4H0YWwt5DklRSQ6I1bYv0O7H1/view" target="_blank">Securing the Future of E-Voting: Blockchain-based System</a>
                   </h3>
-                  <p style="color: #cbd5e1; font-size: 0.8rem; line-height: 1.4; margin-bottom: 0.6rem;">
+                  <p>
                     Research poster showcasing a blockchain-based voting system designed for security, transparency, and democratic integrity.
                   </p>
-                  <a href="https://drive.google.com/file/d/1SWbr2t_4H0YWwt5DklRSQ6I1bYv0O7H1/view" target="_blank" style="color: #60a5fa; text-decoration: none; font-weight: 500; font-size: 0.8rem;" onmouseover="this.style.color='#93c5fd'" onmouseout="this.style.color='#60a5fa'">
+                  <a href="https://drive.google.com/file/d/1SWbr2t_4H0YWwt5DklRSQ6I1bYv0O7H1/view" target="_blank" class="read-more">
                     View Poster →
                   </a>
                 </div>
@@ -134,31 +132,30 @@
             </div>
 
             <!-- BVED Framework -->
-            <div class="blog-card" style="border: 1px solid rgba(30, 41, 59, 0.5); border-radius: 6px; background: rgba(15, 23, 42, 0.3); margin-bottom: 1rem; transition: all 0.3s ease; overflow: hidden;">
-              <div style="display: flex; flex-wrap: wrap;">
-                <div class="blog-image" style="flex: 0 0 160px; max-width: 160px;">
-                  <div style="width: 100%; height: 120px; background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+            <div class="blog-card">
+              <div>
+                <div class="blog-image">
+                  <div>
                     <img src="authors/thumbnails/bved-framework.png" 
-                         alt="BVED Framework Thumbnail" 
-                         style="width: 100%; height: 100%; object-fit: cover;"
-                         onerror="this.src='https://api.microlink.io/?url=https://drive.google.com/file/d/12lkVTDfGFDJ_i5dJLzQvhuY8I6FuQGok/view&screenshot=true&meta=false&embed=screenshot.url&waitFor=2000'; this.onerror=function(){this.parentElement.innerHTML='<i class=\'fas fa-shield-alt\' style=\'font-size: 2.5rem; color: rgba(111, 66, 193, 0.7);\'></i>'}">
+                         alt="BVED Framework Thumbnail"
+                         onerror="this.src='https://api.microlink.io/?url=https://drive.google.com/file/d/12lkVTDfGFDJ_i5dJLzQvhuY8I6FuQGok/view&screenshot=true&meta=false&embed=screenshot.url&waitFor=2000'; this.onerror=function(){this.parentElement.innerHTML='<i class=\'fas fa-shield-alt\' style=\'font-size: 2.5rem;\'></i>'}">
                   </div>
                 </div>
-                <div class="blog-content" style="flex: 1; padding: 1rem;">
-                  <div style="display: flex; align-items: center; gap: 0.4rem; color: #94a3b8; margin-bottom: 0.4rem; font-size: 0.75rem;">
-                    <i class="far fa-calendar" style="font-size: 0.7rem;"></i>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <i class="far fa-calendar"></i>
                     <span>2025</span>
-                    <span style="margin: 0 0.2rem;">•</span>
-                    <i class="fas fa-file-alt" style="font-size: 0.7rem;"></i>
+                    <span class="separator">•</span>
+                    <i class="fas fa-file-alt"></i>
                     <span>Research Paper</span>
                   </div>
-                  <h3 style="font-size: 1rem; font-weight: 600; color: #f3f4f6; margin-bottom: 0.4rem; line-height: 1.3;">
-                    <a href="https://drive.google.com/file/d/12lkVTDfGFDJ_i5dJLzQvhuY8I6FuQGok/view?usp=sharing" target="_blank" style="color: #f3f4f6; text-decoration: none;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='#f3f4f6'">BVED Framework: Blockchain E-Voting and DevSecOps</a>
+                  <h3>
+                    <a href="https://drive.google.com/file/d/12lkVTDfGFDJ_i5dJLzQvhuY8I6FuQGok/view?usp=sharing" target="_blank">BVED Framework: Blockchain E-Voting and DevSecOps</a>
                   </h3>
-                  <p style="color: #cbd5e1; font-size: 0.8rem; line-height: 1.4; margin-bottom: 0.6rem;">
+                  <p>
                     Research paper on blockchain-based e-voting systems and DevSecOps framework for containerized applications.
                   </p>
-                  <a href="https://drive.google.com/file/d/12lkVTDfGFDJ_i5dJLzQvhuY8I6FuQGok/view?usp=sharing" target="_blank" style="color: #60a5fa; text-decoration: none; font-weight: 500; font-size: 0.8rem;" onmouseover="this.style.color='#93c5fd'" onmouseout="this.style.color='#60a5fa'">
+                  <a href="https://drive.google.com/file/d/12lkVTDfGFDJ_i5dJLzQvhuY8I6FuQGok/view?usp=sharing" target="_blank" class="read-more">
                     Read Paper →
                   </a>
                 </div>
