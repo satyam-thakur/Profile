@@ -10,16 +10,22 @@
   --link-hover:#93c5fd;
 }
 
-html[data-theme='light']{
-  --accent:#ffffff;
-  --bg:#ffffff;
-  --text:#111827;
-  --card-bg:#f9fafb;
-  --card-border:#e5e7eb;
-  --text-muted:#374151;
-  --text-em:#1f2937;
-  --link-primary:#2563eb;
-  --link-hover:#1d4ed8;
+/* Light theme (when dark class is NOT present) */
+body:not(.dark){
+  background-color:#e0f2fe !important;
+}
+
+body:not(.dark) *{
+  color:#000000 !important;
+}
+
+body:not(.dark) #navbar-main.navbar{
+  background:rgba(30,41,59,.8) !important;
+}
+
+body:not(.dark) #navbar-main .navbar-brand,
+body:not(.dark) #navbar-main .nav-link{
+  color:#ffffff !important;
 }
 
 body{
@@ -38,7 +44,7 @@ a{color:var(--link-primary)}
 #navbar-main .navbar-brand,
 #navbar-main .nav-link{color:var(--text) !important}
 #navbar-main .nav-link:hover{color:#93c5fd !important}
-#navbar-main .fas.fa-moon{color:#cbd5e1}
+#navbar-main .fas.fa-moon{color:#ffffff !important}
 
 /* Hero/About section */
 section#about .home-section-bg{background:linear-gradient(180deg, rgba(17,24,39,.6) 0%, rgba(11,15,23,0) 60%)}

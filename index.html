@@ -905,8 +905,13 @@
     // Dynamically load first 3 projects from projects.html
     (function() {
       function loadFeaturedProjects() {
-        fetch('projects.html')
-          .then(response => response.text())
+        fetch('./projects.html')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+          })
           .then(html => {
             // Create a temporary DOM element to parse the HTML
             const parser = new DOMParser();
@@ -954,8 +959,13 @@
     // Dynamically load first 2 blog posts from blog.html
     (function() {
       function loadFeaturedBlogPosts() {
-        fetch('blog.html')
-          .then(response => response.text())
+        fetch('./blog.html')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+          })
           .then(html => {
             // Create a temporary DOM element to parse the HTML
             const parser = new DOMParser();
